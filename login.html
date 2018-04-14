@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/login.css" type="text/css">
+<!--  Button Font   -->
+        <link href="https://fonts.googleapis.com/css?family=Rajdhani:400,700" rel="stylesheet">
+<!--   Heading Font   -->
+        <link href="https://fonts.googleapis.com/css?family=Saira:400,700" rel="stylesheet">
+<!--   Dialog/Input Font-->
+        <link href="https://fonts.googleapis.com/css?family=Aldrich" rel="stylesheet">
+        <title>Login Page</title>
+    </head>
+    <body onload="myFunction()" style="margin:0;" id="lbody">
+    
+<!--    
+
+  _____  ______ _______     _______ _      ____  _   _ ______ 
+ |  __ \|  ____/ ____\ \   / / ____| |    / __ \| \ | |  ____|
+ | |__) | |__ | |     \ \_/ / |    | |   | |  | |  \| | |__   
+ |  _  /|  __|| |      \   /| |    | |   | |  | | . ` |  __|  
+ | | \ \| |___| |____   | | | |____| |___| |__| | |\  | |____ 
+ |_|  \_\______\_____|  |_|  \_____|______\____/|_| \_|______|
+                                                              
+    Jun Jung & Laura Wu
+    
+    Table of Contents
+    0. Loader
+    1. Login (landing) page
+    2. Home page
+    3. Education page
+    4. Instruction page
+    5. Play page
+
+-->
+<!--  Loading Screen  -->
+        
+        <div id="loader" class="login_body"></div>    
+        
+        <div id="logo" class="logo_ani">
+            <img src="imgs/logo.svg" alt="logo">
+        </div>
+
+        <div id="question" class="question_ani">
+            <h1>What is your name?</h1>
+        </div>
+        
+        <input type="text" id="user_name" maxlength="10" autofocus/ class="input_ani">
+    
+        <button id="enter" class="animate-bottom" type="button" onclick="window.location.href='home.html'">enter</button>
+        
+        <script src="js/login.js"></script>    
+    </body>
+<html>
