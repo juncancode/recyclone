@@ -1,0 +1,489 @@
+/*   
+- Color Palette - 
+ #3c423f black 
+ #0c6f40 dark green 
+ #66c144 green 
+ #bbe4ac lime 
+ #ffffff white 
+*/
+/* Main Container */
+.main_container {
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    margin:auto;
+    width:1400px;
+    height:1100px;
+    background-color: #3c423f;
+}
+
+/* Header */
+header {
+    position:relative;
+    top:0;
+    left:0;
+    right:0;
+    width:100%;
+    height:150px;
+    background-color: #bbe4ac;
+}
+/* Logo */
+.logo {
+    position:absolute;
+    top:0;
+    left:2%;
+    margin-top:10px;
+}
+
+.logo img{
+    width:80%;
+}
+
+.logo p {
+    position:absolute;
+    top:45%;
+    left:40%;
+    font-family:"Arial Black", Gadget, sans-serif;
+    font-weight:bolder;
+    font-size:2rem;
+    color:#3c423f;
+}
+/* navigation bar */
+nav {
+    position:absolute;
+    top:30%;
+    right:5%;
+}
+
+nav a {
+    text-decoration: none;
+    font-family: 'Saira', sans-serif;
+    font-size:3rem;
+    color:#3c423f;
+    margin:50px;
+}
+
+nav a:hover {
+    color: #66c144;
+}
+
+/* Flex */
+.flex {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content:center;
+	align-content: center;
+	align-items: center;
+}
+
+/* Title */
+.title {
+    text-align: center;
+    margin-top:10px;
+    font-family: 'Saira', sans-serif;
+    font-size:3rem;
+    color:#ffffff;
+    text-transform: uppercase;
+}
+/* Title display */
+.title {
+    visibility: hidden;
+}
+/* Icons */
+.icons {
+    position:relative;
+    top:-2%;
+}
+
+[class*="fa"] {
+    margin:20px;
+    font-size:2rem;
+    color:#ffffff;
+    cursor:pointer;
+}
+
+/* Icon pop Animation */
+@-webkit-keyframes pop{
+    0%{transform: scale(0)}
+    80%{transform: scale(1.3)}
+    100%{transform: scale(1)}
+} 
+
+[class*="fa"]:nth-child(1){
+    animation:pop 0.1s ease-in-out 1s 1 backwards;
+}
+
+[class*="fa"]:nth-child(2){
+    animation:pop 0.1s ease-in-out 1.2s 1 backwards;
+}
+
+[class*="fa"]:nth-child(3){
+    animation:pop 0.1s ease-in-out 1.4s 1 backwards;
+}
+
+[class*="fa"]:nth-child(4){
+    animation:pop 0.1s ease-in-out 1.6s 1 backwards;
+}
+
+[class*="fa"]:nth-child(5){
+    animation:pop 0.1s ease-in-out 1.8s 1 backwards;
+}
+
+/* Bubble Animation */
+@-webkit-keyframes bubble {
+    0%{transform: scale(0);transform-origin:bottom right};
+    100%{transform: scale(1);transform-origin:bottom right};
+}
+
+/* Bubble */
+.bubble {
+    position:relative;
+}
+
+.bubble img {
+    position: absolute;
+    top:0;
+    right:0;
+    left:2%;
+    margin:auto;
+    width:350px;
+    height:auto;
+    animation:bubble 1s ease-in-out 4.5s 1 backwards;
+}
+
+.bubble p {
+    position: absolute;
+    top:50px;
+    left:41%;
+    font-family: 'Aldrich', sans-serif;
+    font-size:1.4rem;
+    letter-spacing:-1px;
+    display:none;
+}
+
+.thinking {
+    position:absolute;
+    top:50px;
+    right:43%;
+}
+
+.thinking .fa-circle {
+    font-size:1.5rem;
+    color:#bbe4ac; 
+}
+
+/* thinking Animation */
+@-webkit-keyframes opacity {
+    0%{visibility: hidden}
+    100%{visibility: visible}
+}
+
+@-webkit-keyframes thinking {
+    0% {color:#66c144;opacity:0.3}
+    50%{color:#66c144;opacity: 0.7}
+    100%{color:#66c144;opacity:0.3}
+}
+.fa-circle:nth-child(1) {
+    animation:thinking 2s ease-out 6s infinite backwards, opacity 0.5s linear 6s 1 both;
+}
+.fa-circle:nth-child(2) {
+    animation:thinking 2s ease-out 6.5s infinite backwards, opacity 0.5s linear 6s 1 both;
+}
+.fa-circle:nth-child(3) {
+    animation:thinking 2s ease-out 7s infinite backwards, opacity 0.5s linear 6s 1 both;
+}
+
+/* Mascot Animation */
+@-webkit-keyframes mascot {
+    0%{transform: translateX(-1500px)}
+    100%{transform: translateY(0px)}
+}
+
+/* Mascot */
+.mascot {
+    position:relative;
+    animation:mascot 1s ease-in-out 2.5s 1 backwards;
+}
+
+.mascot img{
+    position:absolute;
+    top:180px;
+    right:0;
+    left:7%;
+    margin:auto;
+    width:300px;
+}
+
+/* Blink Animation */
+@-webkit-keyframes blink {
+    0%{transform: scaleY(1)}
+    10%{transform: scaleY(0.1)}
+    30%{transform: scaleY(1)}
+    50%{transform: scaleY(1)}
+    100%{transform: scaleY(1)}
+}
+
+.mascot #eyes {
+    position:absolute;
+    top:330px;
+    left:1.8%;
+    width:50px;
+    z-index:99;
+    -webkit-animation: blink 1.5s cubic-bezier(0.2,0.3,0.5,0.9) 3s infinite backwards;
+}
+
+/* Dialogue Animation */
+@-webkit-keyframes boxpop{
+    0%{transform: scale(0);transform-origin: bottom}
+    100%{transform: scale(1);transform-origin: bottom}
+}
+
+/* Dialogue */
+.dialogue {
+    font-family: 'Aldrich', sans-serif;
+    position:absolute;
+    bottom:5%;
+    left:0;
+    right:0;
+    margin:auto;
+    width:700px;
+    height:170px;
+    padding:10px;
+    background-color:#ffffff;
+    border:7px solid #66c144;
+    animation:boxpop 0.5s cubic-bezier(0.5,0.3,0.7,0.7) 3s 1 both;
+}
+
+.dialogue p {
+    line-height:1.3;
+    text-align: center;
+    font-size:2rem;
+    font-weight:700;
+    color:#3c423f;
+}
+
+/* Items */
+.items img {
+    position:relative;
+    cursor: pointer;
+}
+
+/* display control for items  */
+#dispLandfill {
+    display:none;
+}
+
+#dispGlass {
+    display:none;
+}
+
+#dispOrganic {
+    display:none;
+}
+
+#disPlastic {
+    display:none;
+}
+
+#disPaper {
+    display:none;
+}
+/* Landfill */
+
+#utensil {
+    position:absolute;
+    top:20%;
+    left:10%;
+    width:270px;
+}
+
+#straw {
+    position:absolute;
+    top:55%;
+    left:10%;
+    width:150px;
+}
+
+#chip_bag {
+    position:absolute;
+    top:17%;
+    right:23%;
+    width:150px;
+}
+
+#g_bag {
+    position:absolute;
+    top:30%;
+    right:5%;
+    width:200px;
+}
+
+#egg_container {
+    position:absolute;
+    top:60%;
+    right:10%;
+    width:310px;
+}
+
+/* Glass */
+#jamjar {
+    position:absolute;
+    top:17%;
+    left:10%;
+    width:200px;
+}
+
+#ketchup {
+    position:absolute;
+    top:40%;
+    left:25%;
+    width:150px;
+}
+
+#glasscup {
+    position:absolute;
+    top:50%;
+    left:3%;
+    width:200px;
+}
+
+#m_bottle {
+    position:absolute;
+    top:20%;
+    right:15%;
+    width:170px;
+}
+
+#pop {
+    position:absolute;
+    top:50%;
+    right:7%;
+    width:180px;
+}
+
+/* Organic */
+#egg_shell {
+    width:220px;
+    position:absolute;
+    top:25%;
+    left:10%;
+}
+
+#apple {
+    width:200px;
+    position: absolute;
+    top:55%;
+    left:3%;
+}
+
+#banana {
+    width:250px;
+    position: absolute;
+    top:50%;
+    left:22%;
+}
+
+#teabag {
+    width:200px;
+    position: absolute;
+    top:20%;
+    right:10%;
+}
+
+#leaves {
+    width:300px;
+    position: absolute;
+    top:55%;
+    right:5%;
+}
+
+/* Plastic */
+#jug {
+  width:210px;
+    position: absolute;
+    top:20%;
+    right:5%;
+}
+
+#container {
+    width:250px;
+    position: absolute;
+    top:60%;
+    left:5%;
+}
+
+#tetrapak {
+  width:200px;
+    position: absolute;
+    top:50%;
+    right:10%;
+}
+
+#p_bottle {
+    width:250px;
+    position:absolute;
+    top:17%;
+    left:10%;
+}
+
+#can {
+    width:170px;
+    position: absolute;
+    top:44%;
+    left:25%;
+}
+
+/* Paper */
+#newspaper {
+    width:250px;
+    position: absolute;
+    top:20%;
+    left:5%;
+}
+
+#book {
+    width:250px;
+    position:absolute;
+    top:60%;
+    left:3%;
+}
+
+#cereal {
+    width:230px;
+    position:absolute;
+    top:35%;
+    left:20%;
+}
+
+#s_bag {
+    width:220px;
+    position: absolute;
+    top:20%;
+    right:10%;
+}
+
+#box {
+    width:270px;
+    position: absolute;
+    top:55%;
+    right:5%;
+}
+
+/* Footer */
+footer {
+    position:absolute;
+    bottom:0;
+    right:0;
+    left:0;
+    text-align: center;
+    font-family: 'Saira', sans-serif;
+    color:#ffffff;
+    opacity:0.7;
+    font-size:1.3rem;
+    letter-spacing:2px;
+}

@@ -358,10 +358,8 @@ template {
     bottom:0;
     left:0;
     margin:auto;
-    width:100vw;
-    height:100vh;
-    max-width:1400px;
-    max-height:1000px;
+    width:1400px;
+    height:1055px;
     background-color: #3c423f;
 }
 
@@ -414,15 +412,18 @@ nav a {
 nav a:hover {
     color: #66c144;
 }
+
 /* Background */
 .background {
     position:absolute;
+    top:14.2%;
     left:0;
     right:0;
     margin:auto;
-    width:100%;
-    height:100%;
+    width:90.9%;
+    height:auto;
 }
+
 /* Button */
 button {
     position:absolute;
@@ -463,22 +464,26 @@ button:hover {
     top:15%;
     right:0;
     bottom:10%;
-    left:0;
+    left:5%;
 }
 
 .signs img{
-    width:14%;
+    width:160px;
     height:100%;
+}
+
+.signs .plastic {
+    margin-right:50px;
 }
 
 /* Recycling bin */
 .bins {
     position:absolute;
-    top:80%;
+    top:62.5%;
     right:0;
     bottom:0;
     left:0;
-      pointer-events:auto;
+    margin:50px;
 }
 
 .bins img {
@@ -487,18 +492,28 @@ button:hover {
 }
 
 /* Speech Bubble */
+/* Speech Animation */
+@-webkit-keyframes pop {
+    0% {transform: scale(0);transform-origin: bottom right}
+    90%{transform: scale(1.1);transform-origin: bottom top}
+    100%{transform:scale(1);transform-origin:bottom top}
+}
+
 .speech {
     position:relative;
     top:8%;
     left:20%;
     border:1px solid transparent;
     border-radius:10px;
-    padding:10px;
+    padding:20px;
     width:370px;
-    height:150px;
+    height:152px;
     background-color:#ffffff;
     font-family: 'Aldrich', sans-serif;
-    font-size:1.5rem;
+    font-size:1.3rem;
+    letter-spacing:2px;
+    line-height:1.5;
+    animation:pop 0.5s linear 2.5s 1 both;
 }
 
 .speech::after {
@@ -511,7 +526,33 @@ button:hover {
     border-color:#ffffff transparent transparent transparent;
 }
 
+#name {
+    color:#66c144;
+}
+
 /* Mascot */
+/* Mascot Animation */
+@-webkit-keyframes mascot {
+    0%{top:-1100px}
+    50%{top:100px;transform:scaleY(1.1);transform-origin: bottom}
+    75%{top:90px;transform: scaleY(0.7);transform-origin: bottom}
+    100%{top:100px;transform: scaleY(1)}
+}
+
+@-webkit-keyframes eyes {
+    0%{top:-1000px}
+    85%{top:330px;transform:scaleY(0.5)}
+    100%{top:330px}
+}
+
+@-webkit-keyframes blink {
+    0%{transform: scaleY(1)}
+    10%{transform: scaleY(0.1)}
+    30%{transform: scaleY(1)}
+    50%{transform: scaleY(1)}
+    100%{transform: scaleY(1)}
+}
+
 .mascot {
     position:relative;
 }
@@ -523,7 +564,7 @@ button:hover {
     left:0;
     margin:auto;
     width:33%;
-    animation: mascot 0.5s linear 2s;
+    -webkit-animation:mascot 0.5s cubic-bezier(0.2,0.3,0.9,1) 1.5s backwards;
 }
 
 .mascot #eyes {
@@ -531,23 +572,10 @@ button:hover {
     top:330px;
     right:120px;
     left:0;
-    width:6%;
+    width:5.5%;
     z-index:99;
+    -webkit-animation:eyes 0.5s cubic-bezier(0.2,0.3,0.5,0.9) 1.5s backwards, blink 1.5s cubic-bezier(0.2,0.3,0.5,0.9) 3s infinite backwards;
 }
-
-/* Mascot Animation */
-@keyframes mascot {
-    0% {top:300px;transform-origin: bottom}
-    80% {top:110px;transform-origin: bottom;transform: scale(0.9)}
-    100% {top:100px}
-}
-
-@keyframes mascotEye {
-    0% {top:630px;transform-origin: bottom}
-    80% {top:330px;transform-origin: bottom}
-    100% {top:330px;transform-origin: bottom}
-}
-
 
 footer {
     position:absolute;
@@ -558,6 +586,6 @@ footer {
     font-family: 'Saira', sans-serif;
     color:#ffffff;
     opacity:0.7;
-    font-size:1.5rem;
+    font-size:1.3rem;
     letter-spacing:2px;
 }
