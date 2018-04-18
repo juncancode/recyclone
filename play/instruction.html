@@ -4,7 +4,7 @@
         <title>Recyclone - Play Page</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="play.css" type="text/css">
+        <link rel="stylesheet" href="instruction.css" type="text/css">
 <!--  Button Font   -->
         <link href="https://fonts.googleapis.com/css?family=Rajdhani:400,700" rel="stylesheet">
 <!--   Heading/Footer Font   -->        
@@ -13,7 +13,7 @@
         <link href="https://fonts.googleapis.com/css?family=Aldrich" rel="stylesheet">
     </head>
     <body>
-        <h1>UNDER CONTRUCTION Sorry for inconvenience</h1>
+        
         <div class="main_container">
             <!-- Background -->
             <img src="imgs/background.svg" alt="background" class="background">   
@@ -23,9 +23,9 @@
                     <img src="imgs/logo.svg" alt="logo">
                 </div>
                 <nav>
-                    <a id="home" href="../home.html">Home</a>
-                    <a id="tutrial" href="../tutorial.html">How to recycle</a>
-                    <a id="play" href="play.html">Play</a>
+                    <a id="home">Home</a>
+                    <a id="tutrial">How to recycle</a>
+                    <a id="play">Play</a>
                 </nav>
             </header>
 <!--   Sign Section -->
@@ -52,8 +52,27 @@
             </div>
             
             <footer>RECYCLONE&#9400;Jun Jung &amp; Laura Wu</footer>
-            
-        </div>
+        
+        </div> 
+<!-- Instruction Screen -->
+        
+            <img src="imgs/tutorial1.svg" alt="page1" id="page1">
+            <img src="imgs/tutorial2.svg" alt="page2" id="page2">
+            <img src="imgs/tutorial3.svg" alt="page3" id="page3">
+            <img src="imgs/tutorial4.svg" alt="page4" id="page4">
+    <!-- Buttons -->
+            <button id="next1">Next</button>
+            <button id="next2">Next</button>
+            <button id="next3">Next</button>
+            <button id="play_but" onclick="window.location.href='play.html'">Play</button>
+
+            <button id="skip" onclick="window.location.href='play.html'">Skip Instruction</button>
+
+            <button id="back1" onclick="window.location.href='../tutorial.html'">Back</button>
+            <button id="back2">Back</button>
+            <button id="back3">Back</button>
+            <button id="last">Back</button>
+        
         <script src="instruction.js"></script>
     </body>
 </html>

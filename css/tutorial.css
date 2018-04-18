@@ -15,7 +15,7 @@
     left:0;
     margin:auto;
     width:1400px;
-    height:1100px;
+    height:1055px;
     background-color: #3c423f;
 }
 
@@ -38,29 +38,23 @@ header {
 }
 
 .logo img{
-    width:80%;
+    margin-top: 17px;
+    margin-bottom:11px;
+    margin-left:31px;
+    width:65%;
 }
 
-.logo p {
-    position:absolute;
-    top:45%;
-    left:40%;
-    font-family:"Arial Black", Gadget, sans-serif;
-    font-weight:bolder;
-    font-size:2rem;
-    color:#3c423f;
-}
 /* navigation bar */
 nav {
     position:absolute;
-    top:30%;
+    top:32.9%;
     right:5%;
 }
 
 nav a {
     text-decoration: none;
     font-family: 'Saira', sans-serif;
-    font-size:3rem;
+    font-size:2.5rem;
     color:#3c423f;
     margin:50px;
 }
@@ -84,7 +78,7 @@ nav a:hover {
 /* Title */
 .title {
     text-align: center;
-    margin-top:10px;
+    margin-top:22px;
     font-family: 'Saira', sans-serif;
     font-size:3rem;
     color:#ffffff;
@@ -97,11 +91,11 @@ nav a:hover {
 /* Icons */
 .icons {
     position:relative;
-    top:-2%;
+    top:-1%;
 }
 
 [class*="fa"] {
-    margin:20px;
+    margin:27px;
     font-size:2rem;
     color:#ffffff;
     cursor:pointer;
@@ -114,30 +108,34 @@ nav a:hover {
     100%{transform: scale(1)}
 } 
 
+[class*="fa"]:hover {
+    transform:scale(1.2);
+}
+
 [class*="fa"]:nth-child(1){
-    animation:pop 0.1s ease-in-out 1s 1 backwards;
+    animation:pop 0.5s ease-in-out 2s 1 backwards;
 }
 
 [class*="fa"]:nth-child(2){
-    animation:pop 0.1s ease-in-out 1.2s 1 backwards;
+    animation:pop 0.5s ease-in-out 2.2s 1 backwards;
 }
 
 [class*="fa"]:nth-child(3){
-    animation:pop 0.1s ease-in-out 1.4s 1 backwards;
+    animation:pop 0.5s ease-in-out 2.4s 1 backwards;
 }
 
 [class*="fa"]:nth-child(4){
-    animation:pop 0.1s ease-in-out 1.6s 1 backwards;
+    animation:pop 0.5s ease-in-out 2.6s 1 backwards;
 }
 
 [class*="fa"]:nth-child(5){
-    animation:pop 0.1s ease-in-out 1.8s 1 backwards;
+    animation:pop 0.5s ease-in-out 3.4s 1 backwards;
 }
 
 /* Bubble Animation */
 @-webkit-keyframes bubble {
-    0%{transform: scale(0);transform-origin:bottom right};
-    100%{transform: scale(1);transform-origin:bottom right};
+    0%{transform: scale(0);transform-origin:bottom};
+    100%{transform: scale(1);transform-origin:bottom};
 }
 
 /* Bubble */
@@ -147,19 +145,19 @@ nav a:hover {
 
 .bubble img {
     position: absolute;
-    top:0;
+    top:-11px;
     right:0;
     left:2%;
     margin:auto;
-    width:350px;
+    width:390px;
     height:auto;
-    animation:bubble 1s ease-in-out 4.5s 1 backwards;
+    animation:bubble 1s ease-in-out 1s 0.7 backwards;
 }
 
 .bubble p {
     position: absolute;
-    top:50px;
-    left:41%;
+    top:55px;
+    left:40%;
     font-family: 'Aldrich', sans-serif;
     font-size:1.4rem;
     letter-spacing:-1px;
@@ -175,6 +173,7 @@ nav a:hover {
 .thinking .fa-circle {
     font-size:1.5rem;
     color:#bbe4ac; 
+    cursor: none;
 }
 
 /* thinking Animation */
@@ -188,26 +187,20 @@ nav a:hover {
     50%{color:#66c144;opacity: 0.7}
     100%{color:#66c144;opacity:0.3}
 }
+
 .fa-circle:nth-child(1) {
-    animation:thinking 2s ease-out 6s infinite backwards, opacity 0.5s linear 6s 1 both;
+    animation:thinking 2s ease-out 3s infinite backwards, opacity 0.5s linear 2.5s 1 both;
 }
 .fa-circle:nth-child(2) {
-    animation:thinking 2s ease-out 6.5s infinite backwards, opacity 0.5s linear 6s 1 both;
+    animation:thinking 2s ease-out 3.5s infinite backwards, opacity 0.5s linear 2.5s 1 both;
 }
 .fa-circle:nth-child(3) {
-    animation:thinking 2s ease-out 7s infinite backwards, opacity 0.5s linear 6s 1 both;
-}
-
-/* Mascot Animation */
-@-webkit-keyframes mascot {
-    0%{transform: translateX(-1500px)}
-    100%{transform: translateY(0px)}
+    animation:thinking 2s ease-out 4s infinite backwards, opacity 0.5s linear 2.5s 1 both;
 }
 
 /* Mascot */
 .mascot {
     position:relative;
-    animation:mascot 1s ease-in-out 2.5s 1 backwards;
 }
 
 .mascot img{
@@ -230,11 +223,11 @@ nav a:hover {
 
 .mascot #eyes {
     position:absolute;
-    top:330px;
-    left:1.8%;
+    top:335px;
+    left:1.4%;
     width:50px;
     z-index:99;
-    -webkit-animation: blink 1.5s cubic-bezier(0.2,0.3,0.5,0.9) 3s infinite backwards;
+    -webkit-animation: blink 1.5s cubic-bezier(0.2,0.3,0.5,0.9) 1s infinite backwards;
 }
 
 /* Dialogue Animation */
@@ -251,21 +244,48 @@ nav a:hover {
     left:0;
     right:0;
     margin:auto;
-    width:700px;
-    height:170px;
-    padding:10px;
+    width:600px;
+    height:120px;
+    padding:0px 10px 30px 10px;
     background-color:#ffffff;
     border:7px solid #66c144;
-    animation:boxpop 0.5s cubic-bezier(0.5,0.3,0.7,0.7) 3s 1 both;
+    animation:boxpop 0.5s cubic-bezier(0.5,0.3,0.7,0.7) 0.5s 1 both;
 }
 
 .dialogue p {
-    line-height:1.3;
+    line-height:1.5;
     text-align: center;
-    font-size:2rem;
-    font-weight:700;
+    font-size:1.4rem;
+    font-weight:600;
     color:#3c423f;
 }
+/* next button animation */
+@-webkit-keyframes next{
+    0%{transform: translateY(0)}
+    50%{transform:translateY(7px)}
+    100%{transform:translateY(0)}
+}
+
+#next {
+    position:absolute;
+    bottom:0;
+    right:1%;
+    width:3px;
+    height:auto;
+    border-width:15px;
+    border-style:solid;
+    border-color:#66c144 transparent transparent transparent;
+    border-radius:5px;
+    animation:next 1.5s linear infinite backwards;
+    cursor: pointer;
+}
+/*.fa-caret-down {
+    position:absolute;
+    bottom:0;
+    right:0;
+    color:#66c144;
+    font-size:3rem;
+}*/
 
 /* Items */
 .items img {
@@ -293,34 +313,45 @@ nav a:hover {
 #disPaper {
     display:none;
 }
+
 /* Landfill */
+@-webkit-keyframes landfill {
+    0%{transform:translateY(50px)}
+    50%{transform:translateY(0px)}
+    100%{transform:translateY(50px)}
+}
 
 #utensil {
     position:absolute;
     top:20%;
     left:10%;
-    width:270px;
+    width:220px;
+    animation:landfill 2s ease-in-out infinite both;
 }
 
 #straw {
     position:absolute;
-    top:55%;
-    left:10%;
-    width:150px;
+    top:53%;
+    left:5%;
+    width:130px;
+    animation:landfill 2.2s ease-in-out infinite both;
 }
 
 #chip_bag {
     position:absolute;
-    top:17%;
-    right:23%;
+    top:45%;
+    left:23%;
     width:150px;
+    animation:landfill 2.4s ease-in-out infinite both;
 }
+
 
 #g_bag {
     position:absolute;
-    top:30%;
-    right:5%;
-    width:200px;
+    top:23%;
+    right:10%;
+    width:180px;
+    animation:landfill 2.6s ease-in-out infinite both;
 }
 
 #egg_container {
@@ -328,107 +359,140 @@ nav a:hover {
     top:60%;
     right:10%;
     width:310px;
+    animation:landfill 2.8s ease-in-out infinite both;
 }
 
 /* Glass */
+@-webkit-keyframes glass {
+    0%{transform:translateY(30px)}
+    50%{transform:translateY(0px)}
+    100%{transform:translateY(30px)}
+}
+
 #jamjar {
     position:absolute;
-    top:17%;
+    top:20%;
     left:10%;
-    width:200px;
+    width:160px;
+    animation:glass 2s ease-in-out infinite both;
 }
 
 #ketchup {
     position:absolute;
     top:40%;
     left:25%;
-    width:150px;
+    width:110px;
+    animation:glass 2.2s ease-in-out infinite both;
 }
 
 #glasscup {
     position:absolute;
     top:50%;
     left:3%;
-    width:200px;
+    width:180px;
+    animation:glass 2.4s ease-in-out infinite both;
 }
 
 #m_bottle {
     position:absolute;
     top:20%;
     right:15%;
-    width:170px;
+    width:150px;
+    animation:glass 2.6s ease-in-out infinite both;
 }
 
 #pop {
     position:absolute;
     top:50%;
     right:7%;
-    width:180px;
+    width:150px;
+    animation:glass 2.8s ease-in-out infinite both;
 }
 
 /* Organic */
+@-webkit-keyframes organic {
+    0%{transform:translateY(55px)}
+    50%{transform:translateY(0px)}
+    100%{transform:translateY(55px)}
+}
+
 #egg_shell {
-    width:220px;
+    width:190px;
     position:absolute;
-    top:25%;
+    top:20%;
     left:10%;
+    animation:organic 2s ease-in-out infinite both;
 }
 
 #apple {
-    width:200px;
+    width:150px;
     position: absolute;
     top:55%;
     left:3%;
+    animation:organic 2.2s ease-in-out infinite both;    
 }
 
 #banana {
-    width:250px;
+    width:220px;
     position: absolute;
-    top:50%;
-    left:22%;
+    top:40%;
+    left:20%;
+    animation:organic 2.4s ease-in-out infinite both;        
 }
 
 #teabag {
-    width:200px;
+    width:170px;
     position: absolute;
     top:20%;
     right:10%;
+    animation:organic 2.6s ease-in-out infinite both;   
 }
 
 #leaves {
-    width:300px;
+    width:250px;
     position: absolute;
     top:55%;
     right:5%;
+    animation:organic 2.8s ease-in-out infinite both;       
 }
 
 /* Plastic */
+@-webkit-keyframes plastic {
+    0%{transform:translateY(50px)}
+    50%{transform:translateY(0px)}
+    100%{transform:translateY(50px)}
+}
+
 #jug {
-  width:210px;
+  width:190px;
     position: absolute;
     top:20%;
     right:5%;
+    animation:plastic 2s ease-in-out infinite both;       
 }
 
 #container {
-    width:250px;
+    width:200px;
     position: absolute;
     top:60%;
     left:5%;
+    animation:plastic 2.2s ease-in-out infinite both; 
 }
 
 #tetrapak {
-  width:200px;
+    width:180px;
     position: absolute;
     top:50%;
     right:10%;
+    animation:plastic 2.4s ease-in-out infinite both; 
 }
 
 #p_bottle {
-    width:250px;
+    width:200px;
     position:absolute;
     top:17%;
     left:10%;
+    animation:plastic 2.6s ease-in-out infinite both; 
 }
 
 #can {
@@ -436,48 +500,81 @@ nav a:hover {
     position: absolute;
     top:44%;
     left:25%;
+    animation:plastic 2.8s ease-in-out infinite both; 
 }
 
 /* Paper */
+@-webkit-keyframes paper {
+    0%{transform:translateY(55px)}
+    50%{transform:translateY(0px)}
+    100%{transform:translateY(55px)}
+}
+
 #newspaper {
-    width:250px;
+    width:200px;
     position: absolute;
     top:20%;
     left:5%;
+    animation:plastic 2s ease-in-out infinite both; 
 }
 
 #book {
-    width:250px;
+    width:200px;
     position:absolute;
     top:60%;
     left:3%;
+    animation:plastic 2.2s ease-in-out infinite both; 
 }
 
 #cereal {
-    width:230px;
+    width:180px;
     position:absolute;
     top:35%;
     left:20%;
+    animation:plastic 2.4s ease-in-out infinite both;     
 }
 
 #s_bag {
-    width:220px;
+    width:190px;
     position: absolute;
     top:20%;
     right:10%;
+    animation:plastic 2.6s ease-in-out infinite both; 
 }
 
 #box {
-    width:270px;
+    width:250px;
     position: absolute;
     top:55%;
     right:5%;
+    animation:plastic 2.8s ease-in-out infinite both;     
 }
+
+/* Show first dialogue after animations */
+@-webkit-keyframes show {
+    0%{visibility: hidden}
+    100%{visibility: visible}
+}
+
+#textbox {
+    animation: show 1s linear 1 3s backwards;
+}
+
+/* Dialogue Styling */
+a {
+    text-decoration:none;
+    color:#66c144;
+}
+
+span {
+    color:rgb(255,5,5);
+}
+
 
 /* Footer */
 footer {
     position:absolute;
-    bottom:0;
+    bottom:12px;
     right:0;
     left:0;
     text-align: center;

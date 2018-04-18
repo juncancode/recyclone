@@ -5,6 +5,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/tutorial.css" type="text/css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <!--  Button Font   -->
         <link href="https://fonts.googleapis.com/css?family=Rajdhani:400,700" rel="stylesheet">
 <!--   Heading/Footer Font   -->        
@@ -12,7 +13,9 @@
 <!--   Dialog/Input Font-->
         <link href="https://fonts.googleapis.com/css?family=Aldrich" rel="stylesheet">
 <!--   Font Awesome -->
-        <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+        <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous">
+        </script>
+        <link href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" rel="stylesheet">
     </head>
     <body>   
         <div class="main_container">
@@ -20,12 +23,11 @@
             <header>
                 <div class="logo">
                     <img src="imgs/logo.svg" alt="logo">
-                    <p>Recyclone</p>
                 </div>
                 <nav>
                     <a href="home.html" id="home">Home</a>
                     <a href="tutorial.html" id="tutrial">How to recycle</a>
-                    <a href="/play/play.html" id="play">Play</a>
+                    <a href="./play/instruction.html" id="play">Play</a>
                 </nav>
             </header>
             
@@ -33,16 +35,27 @@
             
 <!--    Icons -->
             <div class="icons flex">
-                <i class="fas fa-trash"></i>
-                <i class="fas fa-wine-glass"></i>
-                <i class="fab fa-envira"></i>
-                <i class="far fa-hdd"></i>
-                <i class="far fa-newspaper"></i>
+                <div id="trash">
+                    <i class="fas fa-trash"></i> 
+                </div>    
+                <div id="glass">
+                    <i class="fas fa-glass-martini"></i>
+                </div>
+                <div id="organic">
+                    <i class="fab fa-envira"></i>
+                </div>
+                <div id="plastic">
+                    <i class="fas fa-prescription-bottle"></i>
+                </div>    
+                <div id="paper">
+                    <i class="far fa-sticky-note"></i>
+                </div>    
             </div>
-            <!--    Thought Bubble --> 
+            
+<!--    Thought Bubble --> 
             <div id="bubble" class="bubble">
                 <img src="imgs/bubble.svg" alt="speech bubble"> 
-                <p id="question">What goes into landfill?</p>
+                <p id="question"></p>
                 <div id="thinking" class="thinking">
                     <i class="fas fa-circle"></i>
                     <i class="fas fa-circle"></i>
@@ -51,8 +64,8 @@
             </div>
             
 <!--     Items  -->
-                <!--  Landfill -->
             <div class="items">
+                <!--  Landfill -->
                 <div id="dispLandfill">
                     <img src="imgs/utensil.svg" alt="utensil" id="utensil">
                     <img src="imgs/straw.svg" alt="straw" id="straw">
@@ -93,18 +106,20 @@
                     <img src="imgs/cardboard.svg" alt="cardboard box" id="box">
                 </div>    
             </div>
-<!--     Mascot -->
+            <!--     Mascot -->
             <div class="mascot">
                 <img src="imgs/eyes.svg" alt="eyes" id="eyes">
                 <img src="imgs/mascot.svg" alt="mascot" id="mascot">
             </div>
             
-<!--     Text Box -->
-            <div class="dialogue">
-                <p id="text">Click any icon you desire to see <br/>what items can be recycled.</p>
+            <!-- Text Box -->
+            <div class="dialogue" id="here">
+                <p id="textbox">Click any icon above you desire to learn<br/>about what belongs where. If you feel confident enough, click Play button to test yourself.</p>
+<!--                <div id="next"></div>-->
             </div>
             
             <footer>RECYCLONE&#9400;Jun Jung &amp; Laura Wu</footer>
         </div>
+        <script src="js/tutorial.js"></script>
     </body>
 </html>
