@@ -29,6 +29,7 @@ header {
     height:150px;
     background-color: #bbe4ac;
 }
+
 /* Logo */
 .logo {
     position:absolute;
@@ -42,6 +43,11 @@ header {
     margin-bottom:11px;
     margin-left:31px;
     width:65%;
+}
+
+/* Home link */
+.logo:hover{
+    filter:brightness(135%);
 }
 
 /* navigation bar */
@@ -560,16 +566,60 @@ nav a:hover {
     animation: show 1s linear 1 3s backwards;
 }
 
-/* Dialogue Styling */
-a {
-    text-decoration:none;
-    color:#66c144;
-}
-
 span {
     color:rgb(255,5,5);
 }
 
+/* Left Arrow */
+.L_arrow {
+  position:relative;
+}
+
+.fa-angle-left {
+    position:absolute;
+    top:520px;
+    left:50px;
+    font-size:5rem;
+}
+
+.fa-angle-left:hover {
+    color:#66c144;
+}
+
+.L_arrow p {
+    font-family:'Saira', sans-serif;
+    font-size:2em;
+    position:absolute;
+    left:135px;
+    top:530px;
+    color:#ffffff;
+    animation:pop 0.5s ease-in-out 2s 1 backwards;
+}
+/* Right Arrow */
+.R_arrow {
+  position:relative;
+}
+
+.fa-angle-right {
+    position:absolute;
+    top:520px;
+    right:50px;
+    font-size:5rem;
+}
+
+.fa-angle-right:hover {
+    color:#66c144;
+}
+
+.R_arrow p {
+    font-family:'Saira', sans-serif;
+    font-size:2em;
+    position:absolute;
+    right:135px;
+    top:530px;
+    color:#ffffff;
+    animation:pop 0.5s ease-in-out 2s 1 backwards;
+}
 
 /* Footer */
 footer {

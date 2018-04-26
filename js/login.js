@@ -3,6 +3,7 @@ var loader;
 var username = document.getElementById("user_name");
 var enter = document.getElementById("enter");
 var firstname = document.getElementById("name");
+var message = document.getElementById("message");
 
 function myFunction(){
     loader = setTimeout(showPage, 1000);
@@ -20,13 +21,13 @@ function showPage() {
 // Users have are rquired to put their name to move on
 function login(){
     if (username.value == "") {
-    username.value = "Please Enter your name";
+     message.innerHTML = "Please enter your name.";
     } else {
         enter.addEventListener("click",function(){
-           localStorage.setItem('name',username.value)
-            var name = localStorage.getItem('name')
-            console.log(name)
             window.location.href = "home.html";
+            sessionStorage.setItem('name',username.value);
+            firstname.innerText = sessionStorage.getItem('name');
+            console.log(name)
         });
     }   
 }

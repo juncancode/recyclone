@@ -47,6 +47,11 @@ header {
     width:65%;
 }
 
+/* Home link */
+.logo:hover{
+    filter:brightness(135%);
+}
+
 /* navigation bar */
 nav {
     position:absolute;
