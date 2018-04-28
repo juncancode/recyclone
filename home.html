@@ -52,6 +52,11 @@
             </div>
             <footer>RECYCLONE&#9400;Jun Jung &amp; Laura Wu</footer>
         </div>
-        <script src=js/login.js></script>
+        <script>
+            var firstname = document.getElementById("name");
+            
+            firstname.innerText = sessionStorage.getItem('name');
+            console.log(name);
+        </script>
     </body>
 </html>
