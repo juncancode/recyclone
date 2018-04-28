@@ -2,7 +2,6 @@
 var loader;
 var username = document.getElementById("user_name");
 var enter = document.getElementById("enter");
-var firstname = document.getElementById("name");
 var message = document.getElementById("message");
 
 function myFunction(){
@@ -18,19 +17,15 @@ function showPage() {
     document.getElementById('lbody').style.backgroundColor = "#66c144";
 } 
 
-// Users have are rquired to put their name to move on
+// Users have are required to put their name to move on
+enter.addEventListener("click",login);
+
 function login(){
     if (username.value == "") {
      message.innerHTML = "Please enter your name.";
     } else {
-        enter.addEventListener("click",function(){
-            window.location.href = "home.html";
             sessionStorage.setItem('name',username.value);
-            firstname.innerText = sessionStorage.getItem('name');
-            console.log(name)
-        });
+      
+            window.location.href = "home.html";
     }   
 }
-
-// Saves user name
-            
