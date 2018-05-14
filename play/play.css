@@ -8,6 +8,7 @@
 */
 
 /* Main Container */
+
 .main_container {
     position:absolute;
     top:0;
@@ -108,6 +109,8 @@ nav a:hover {
     bottom:0;
     left:0;
     margin:50px;
+    cursor: pointer;
+    z-index:3;
 }
 
 .bins img {
@@ -138,16 +141,22 @@ footer {
     opacity:0.7;
     font-size:1.3rem;
     letter-spacing:2px;
+    z-index:3;
 }
 
+
 .hole {
+    background-image:url(imgs/hole.svg);
+    background-repeat: no-repeat;
     width:300px;
     position: absolute;
-    top:0;
+    top:17%;
     right:0;
-    bottom:50%;
+    bottom:0;
     left:0;
     margin:auto;
+    cursor:pointer;
+    pointer-events:auto;
 }
 
 .timer {
@@ -157,15 +166,44 @@ footer {
     right:16%;
 }
 
-h1 {
-    display:flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-    text-align: center;
-    font-size:3rem;
-    color:#293;
-    margin-top:15%;
-    text-shadow: 1px 2px 2px #ffffff;
-    font-family: 'Saira', sans-serif;
+/* CountDown */
+.bin:hover {
+    filter:brightness(85%);
 }
+
+#readyGo {
+    position:relative;
+}
+
+@-webkit-keyframes count {
+    0% {transform: scale(1.5);}
+    100% {transform: scale(1);}
+}
+
+.nums {
+    width:10%;
+    height:200px;
+    position:absolute;
+    top:700px;
+    right:0;
+    bottom:0;
+    left:0;
+    margin:auto;
+    -webkit-animation:count 0.1s cubic-bezier(0.1,0.1,1,1) 1;
+    animation:count 0.1s cubic-bezier(0.1,0.1,1,1) 1;    
+}
+
+.go {
+    width:500px;
+}
+
+.randomImg {
+    width:200px;
+    height:200px;
+    position:absolute;
+    top:0;
+    right:0;
+    left:0;
+    bottom:78%;
+    margin:auto;
+} 

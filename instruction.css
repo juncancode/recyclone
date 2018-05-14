@@ -163,14 +163,15 @@ footer {
     bottom:0;
     left:0;
     margin:auto;
+    
 }
 
 [id*="next"] {
     width:130px;
     height:40px;
     position:absolute;
-    top:40%;
-    right:-15%;
+    top:35%;
+    right:-20%;
     bottom:0;
     left:0;
     margin:auto;
@@ -223,10 +224,10 @@ footer {
     width:130px;
     height:40px;
     position:absolute;
-    top:40%;
+    top:35%;
     right:0;
     bottom:0;
-    left:-15%;;
+    left:-20%;
     margin:auto;
     background-color:#ffffff;
     color:#3c423f;
@@ -259,7 +260,7 @@ footer {
     width:180px;
     height:40px;
     position: absolute;
-    top:53%;
+    top:48%;
     right:0;
     bottom:0;
     left:0;
@@ -283,7 +284,7 @@ footer {
     width:130px;
     height:40px;
     position: absolute;
-    top:40%;
+    top:35%;
     right:0;
     bottom:0;
     left:0;
@@ -311,7 +312,7 @@ footer {
     width:130px;
     height:40px;
     position:absolute;
-    top:53%;
+    top:48%;
     right:0;
     bottom:0;
     left:0;
@@ -333,4 +334,15 @@ footer {
 
 #last {
     display:none;
+}
+
+.pages {
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    margin:auto;
+    width:1400px;
+    height:1055px;
 }

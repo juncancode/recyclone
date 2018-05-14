@@ -1,9 +1,9 @@
-// images
+// pages
 var page1 = document.getElementById("page1");
 var page2 = document.getElementById("page2");
 var page3 = document.getElementById("page3");
 var page4 = document.getElementById("page4");
-// next 
+// next buttons
 var next1 = document.getElementById("next1");
 var next2 = document.getElementById("next2");
 var next3 = document.getElementById("next3");
@@ -11,7 +11,7 @@ var next3 = document.getElementById("next3");
 // skip button 
 var skip = document.getElementById("skip");
 
-// back
+// back buttons
 var before1 = document.getElementById("back1");
 var before2 = document.getElementById("back2");
 var before3 = document.getElementById("back3");
@@ -21,6 +21,7 @@ var playBut = document.getElementById("play_but");
 // Back button 
 var last = document.getElementById("last");
 
+// Instruction pages
 next1.addEventListener("click",function(){
     console.log("test");
     page1.style.display = "none";

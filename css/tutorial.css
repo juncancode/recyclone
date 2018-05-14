@@ -262,7 +262,7 @@ nav a:hover {
     line-height:1.5;
     text-align: center;
     font-size:1.4rem;
-    font-weight:600;
+    font-weight:400;
     color:#3c423f;
 }
 /* next button animation */
@@ -285,13 +285,6 @@ nav a:hover {
     animation:next 1.5s linear infinite backwards;
     cursor: pointer;
 }
-/*.fa-caret-down {
-    position:absolute;
-    bottom:0;
-    right:0;
-    color:#66c144;
-    font-size:3rem;
-}*/
 
 /* Items */
 .items img {

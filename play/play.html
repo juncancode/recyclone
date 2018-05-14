@@ -11,9 +11,9 @@
         <link href="https://fonts.googleapis.com/css?family=Saira:400,700" rel="stylesheet">
 <!--   Dialog/Input Font-->
         <link href="https://fonts.googleapis.com/css?family=Aldrich" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     </head>
     <body>
-        <h1>UNDER CONTRUCTION Sorry for inconvenience</h1>
         <div class="main_container">
             <!-- Background -->
             <img src="imgs/background.svg" alt="background" class="background">   
@@ -28,6 +28,7 @@
                     <a id="play" href="play.html">Play</a>
                 </nav>
             </header>
+            
 <!--   Sign Section -->
             <div class="signs flex">
                 <img src="imgs/papersign.svg" alt="papersign" class="paper">
@@ -38,22 +39,26 @@
             </div>
 <!-- Recycling bin section -->
             <div class="bins flex">
-                <img src="imgs/paperbin.svg" alt="paperbin" id="paper">
-                <img src="imgs/organicbin.svg" alt="organicbin" id="organic">
-                <img src="imgs/landfillbin.svg" alt="landfillbin" id="landfill">
-                <img src="imgs/glassbin.svg" alt="glassbin" id="glass">
-                <img src="imgs/plasticbin.svg" alt="plasticbin" id="plastic">
+                <img src="imgs/paperbin.svg" alt="paperbin" id="paper" class="bin" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img src="imgs/organicbin.svg" alt="organicbin" id="organic" class="bin" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img src="imgs/landfillbin.svg" alt="landfillbin" id="landfill" class="bin" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img src="imgs/glassbin.svg" alt="glassbin" id="glass" class="bin" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img src="imgs/plasticbin.svg" alt="plasticbin" id="plastic" class="bin" ondrop="drop(event)" ondragover="allowDrop(event)">
             </div>
-            
-            <img src="imgs/hole.svg" alt="hole" id="hole" class="hole">
-            
+
             <div id="timer" class="timer">
                 <img src="imgs/timer.svg" alt="timer">
             </div>
             
+            <div id="hole" class="hole">
+            </div>
+            
             <footer>RECYCLONE&#9400;Jun Jung &amp; Laura Wu</footer>
             
+            <div id="readyGo"></div>
+            
         </div>
-        <script src="instruction.js"></script>
+        
+        <script src="play.js"></script>
     </body>
 </html>
