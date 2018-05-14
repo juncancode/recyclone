@@ -29,3 +29,16 @@ function login(){
             window.location.href = "home.html";
     }   
 }
+
+username.addEventListener("keyup",function(event){
+    event.preventDefault();
+    if(event.keyCode == 13) {
+            if (username.value == "") {
+            message.innerHTML = "Please enter your name."; 
+    } else {
+            sessionStorage.setItem('name',username.value);
+      
+            window.location.href = "home.html";
+    }
+}
+});
