@@ -261,6 +261,10 @@ footer {
     height:150px;
 }
 
+.quizitem2 {
+    height:170px;
+}
+
 /* Result */
 #resultMascot {
     position:absolute;
@@ -287,5 +291,20 @@ footer {
     font-family: 'Saira', sans-serif;
     color:#3c423f; 
     font-size:2.5rem;
+    display:none;
+}
+
+#review {
+    position:absolute;
+    top:30px;
+    left:43%;
+    width:150px;
+    height:50px;
+    color:#ffffff;
+    font-size:1.5rem;
+    border-radius:50px;
+    border:1px solid transparent;
+    background-color:#66c144;
+    cursor: pointer;
     display:none;
 }

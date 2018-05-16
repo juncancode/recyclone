@@ -196,9 +196,9 @@ var questionArray= ["which one of these items goes into landfill bin?",
                    "Which one of these items goes into paper bin?"];
 var answerArray = [];
 
-var results = ["You are a good human being ^^ ",
-             "Not bad",
-             "You must leave the earth! "]
+var results = ["Congratulations! You are good at recycling.",
+             "Not bad, but doesn't hurt to review",
+             "Study again!"]
 
 var list1 = document.getElementById("list1"),
     list2 = document.getElementById("list2"),
@@ -212,6 +212,8 @@ var score = 0;
 var scores = document.getElementById("scores");
 var showScore = document.getElementById("show_score");
 var bubble = document.getElementById("bubble");
+var review = document.getElementById("review");
+
 
 list1.addEventListener("click", function() {
     numClick++;
@@ -314,6 +316,7 @@ function nextQ () {
     $("#h1").text(questionArray[1]);
     list1.src = "imgs/chipbag.svg";
     list2.src = "imgs/plasticbottle.svg";
+    list2.setAttribute("class","quizitem2");
     list3.src = "imgs/straw.svg";
     list4.src = "imgs/popbottle.svg";
     list5.src = "imgs/jug.svg";
@@ -331,6 +334,7 @@ function nextQ2 () {
 function nextQ3 () {
     $("#h1").text(questionArray[3]);
     list1.src = "imgs/leave.svg";
+    list1.setAttribute("class","quizitem");
     list2.src = "imgs/bag.svg";
     list3.src = "imgs/milkbottle.svg";
     list4.src = "imgs/plasticbottle.svg";
@@ -362,6 +366,7 @@ function result() {
         scores.innerHTML = score;
         showScore.style.display = "block";
         bubble.style.display = "block";
+        review.style.display = "block";
     } else if (score == 3) {
         $("#h1").text(results[1]);
         list1.style.display = "none";
@@ -373,7 +378,8 @@ function result() {
         mascot.style.display = "block";
         scores.innerHTML = score;
         showScore.style.display = "block";
-         bubble.style.display = "block";
+        bubble.style.display = "block";
+        review.style.display = "block";
     } else if (score >= 4) {
         $("#h1").text(results[0]);
         list1.style.display = "none";
