@@ -206,7 +206,7 @@ footer {
     width:1000px;
     height:550px;
     position:relative;
-    top:300px;
+    top:200px;
     left:0;
     right:0;
     bottom:0;
@@ -214,6 +214,7 @@ footer {
     display:flex;
     justify-content: center;
     visibility: hidden;
+    z-index:99;
 }
 
 #quiz_two {
@@ -252,7 +253,29 @@ footer {
     top:-10px;
     font-size:3em;
     color:#fff;
-    cursor: pointer;
+    cursor:pointer;
 }
 
 /* Quiz items */
+.quizitem {
+    height:150px;
+}
+
+/* Result */
+#resultMascot {
+    position:absolute;
+    top:0;
+    bottom:-40%;
+    right:27%;
+    margin:auto;
+    width:250px;
+    display:none;
+}
+
+#bubble {
+    width:250px;
+    position:absolute;
+    top:35%;
+    left:250px;
+    display:block;
+}

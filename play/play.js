@@ -157,12 +157,12 @@ function showRandomItem(){
 }
 
 
-/*function start(){
+function start(){
 hole.addEventListener("click",function(){
    console.log("item");
    showRandomItem(); 
 });
-}*/
+}
 
 // Quiz Appear 
 var quiz_one = document.getElementById("quiz_one");
@@ -190,11 +190,15 @@ exitBut.addEventListener("click",function(){
 //});
 
 var questionArray= ["which one of these items goes into landfill bin?", 
-                    "Which one of these items goes into glass bin",
-                   "Which one of these items goes into compost bin",
-                   "Which one of these items goes into plastic bin",
-                   "Which one of these items goes into paper bin"];
+                    "Which one of these items goes into glass bin?",
+                   "Which one of these items goes into compost bin?",
+                   "Which one of these items goes into plastic bin?",
+                   "Which one of these items goes into paper bin?"];
 var answerArray = [];
+
+var results = ["You are a good human being ^^ ",
+             "Not bad",
+             "You must leave the earth! "]
 
 var list1 = document.getElementById("list1"),
     list2 = document.getElementById("list2"),
@@ -202,16 +206,173 @@ var list1 = document.getElementById("list1"),
     list4 = document.getElementById("list4"),
     list5 = document.getElementById('list5');
 
+var mascot = document.getElementById("resultMascot");
+var numClick = 0;
+var score = 0;
+
 list1.addEventListener("click", function() {
-    answerArray.push(this.src);
-    nextQ();
+    numClick++;
+    console.log(score);
+   if (numClick == 1) {
+        answerArray.push(this.src);
+        nextQ();
+    } else if (numClick == 2) {
+        answerArray.push(this.src);
+        nextQ2();
+    } else if (numClick == 3){
+        answerArray.push(this.src);
+        nextQ3();
+    } else if (numClick == 4){
+        answerArray.push(this.src);
+        nextQ4();
+    } else if (numClick == 5){
+        result();
+    }
+});
+
+list2.addEventListener("click", function() {
+    numClick++;
+    if(numClick == 1) {
+        answerArray.push(this.src);
+        nextQ();
+    } else if (numClick == 2){
+        answerArray.push(this.src);
+        nextQ2();
+    } else if (numClick == 3){
+        answerArray.push(this.src);
+        nextQ3();
+    } else if (numClick == 4){
+        answerArray.push(this.src);
+        nextQ4();
+    }  else if (numClick == 5){
+        result();
+    }
+});
+
+list3.addEventListener("click", function() {
+    numClick++;
+    if(numClick == 1) {
+        answerArray.push(this.src);
+        nextQ();
+    } else if(numClick == 2){
+        answerArray.push(this.src);
+        nextQ2();
+    } else if (numClick == 3){
+        answerArray.push(this.src);
+        nextQ3();
+    } else if (numClick == 4){
+        answerArray.push(this.src);
+        nextQ4();
+    } else if (numClick == 5){
+        result();
+    }
+});
+
+list4.addEventListener("click", function() {
+    numClick++;
+    score++;
+    if(numClick == 1){
+        answerArray.push(this.src);
+        nextQ();   
+    } else if(numClick == 2){
+        answerArray.push(this.src);
+        nextQ2();
+    } else if (numClick == 3){
+        answerArray.push(this.src);
+        nextQ3();
+    } else if (numClick == 4){
+        answerArray.push(this.src);
+        nextQ4();
+    } else if (numClick == 5){
+        result();
+    }
+});
+
+list5.addEventListener("click", function() {
+    numClick++;
+    if(numClick == 1) {
+        answerArray.push(this.src);
+        nextQ(); 
+    } else if(numClick ==2){
+        answerArray.push(this.src);
+        nextQ2();
+    } else if (numClick == 3){
+        answerArray.push(this.src);
+        nextQ3();
+    } else if (numClick == 4){
+        answerArray.push(this.src);
+        nextQ4();
+    }  else if (numClick == 5){
+        result();
+    }
 });
 
 function nextQ () {
     $("#h1").text(questionArray[1]);
+    list1.src = "imgs/chipbag.svg";
+    list2.src = "imgs/plasticbottle.svg";
+    list3.src = "imgs/straw.svg";
+    list4.src = "imgs/popbottle.svg";
+    list5.src = "imgs/jug.svg";
+}
+
+function nextQ2 () {
+    $("#h1").text(questionArray[2]);
+    list1.src = "imgs/book.svg";
+    list2.src = "imgs/container.svg";
+    list3.src = "imgs/utensil.svg";
+    list4.src = "imgs/banana.svg";
+    list5.src = "imgs/cardboard.svg";
+}
+
+function nextQ3 () {
+    $("#h1").text(questionArray[3]);
     list1.src = "imgs/leave.svg";
-    list2.src = "imgs/tetrapak.svg";
-    list3.src = "imgs/newspaper.svg";
-    list4.src = "imgs/glasscup.svg";
-    list5.src = "imgs/eggs.svg";
+    list2.src = "imgs/bag.svg";
+    list3.src = "imgs/milkbottle.svg";
+    list4.src = "imgs/plasticbottle.svg";
+    list4.setAttribute("class","quizitem");
+    list5.src = "imgs/jamjar.svg";
+}
+
+function nextQ4 () {
+    $("#h1").text(questionArray[4]);
+    list1.src = "imgs/teabag.svg";
+    list2.src = "imgs/can.svg";
+    list2.setAttribute("class","quizitem");
+    list3.src = "imgs/glasscup.svg";
+    list4.src = "imgs/newspaper.svg";
+    list5.src = "imgs/eggshell.svg";
+    list5.setAttribute("class","quizitem");
+}
+
+function result() {
+    if (score <= 2) {
+        $("#h1").text(results[2] + score + " / 5");
+        list1.style.display = "none";
+        list2.style.display = "none";
+        list3.style.display = "none";
+        list4.style.display = "none";
+        list5.style.display = "none";
+        mascot.src = "imgs/angry.svg";
+        mascot.style.display = "block";
+    } else if (score == 3) {
+        $("#h1").text(results[1] + score + " / 5");
+        list1.style.display = "none";
+        list2.style.display = "none";
+        list3.style.display = "none";
+        list4.style.display = "none";
+        list5.style.display = "none";
+        mascot.src = "imgs/soso.svg";
+        mascot.style.display = "block";
+    } else if (score >= 4) {
+        $("#h1").text(results[0] + score + " / 5");
+        list1.style.display = "none";
+        list2.style.display = "none";
+        list3.style.display = "none";
+        list4.style.display = "none";
+        list5.style.display = "none";
+        mascot.src = "imgs/awesome.svg";
+        mascot.style.display = "block";
+    }
 }
