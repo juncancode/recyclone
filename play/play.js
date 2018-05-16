@@ -53,8 +53,8 @@ countdown(document.getElementById("readyGo"), function(){
   
 });
 
-
-var items = [{
+//Random items function not used
+/*var items = [{
                image:'imgs/straw.svg',
                 type:'garbage'
                 }, {
@@ -162,7 +162,7 @@ hole.addEventListener("click",function(){
    console.log("item");
    showRandomItem(); 
 });
-}
+}*/
 
 // Quiz Appear 
 var quiz_one = document.getElementById("quiz_one");
@@ -173,21 +173,10 @@ function start(){
     quiz_one.style.visibility = "visible";
 }
 
-// Quiz Appear
 var exitBut = document.getElementById("exit");
 exitBut.addEventListener("click",function(){
     quiz_one.style.display = "none";
 });
-
-//var q1 = '<h1>Which one of these items goes into landfill bin?</h1><i id="exit" class="fas fa-times-circle"></i><img src="imgs/apple.svg" id="wrong"><img src="imgs/garbagebag.svg" id="right"><img src="imgs/bag.svg" id="wrong"><img src="imgs/tetrapak.svg" id="wrong"><img src="imgs/jug.svg" id="wrong">'
-
-//var quiz = [q1];
-
-//var position = 0;
-
-//$(document).ready(function(){
-//   $('#quiz_one').html(quiz[position]); 
-//});
 
 var questionArray= ["which one of these items goes into landfill bin?", 
                     "Which one of these items goes into glass bin?",

@@ -495,7 +495,6 @@ h2{
     width: 120px;
     height: 120px;
     border-radius: 50%;
-
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -624,25 +623,6 @@ h2{
     height:auto;
 }
 
-
-/*
-.speech {
-    position:relative;
-    top:9%;
-    left:20%;
-    border:1px solid transparent;
-    border-radius:10px;
-    padding:20px;
-    width:370px;
-    height:152px;
-    background-color:#ffffff;
-    font-family: 'Aldrich', sans-serif;
-    font-size:1.3rem;
-    letter-spacing:2px;
-    line-height:1.5;
-    animation:pop 0.5s linear 2.5s 1 both;
-}
-*/
 .speech::after {
     content:"";
     position:absolute;

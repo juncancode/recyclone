@@ -142,7 +142,6 @@ footer {
     z-index:3;
 }
 
-
 .hole {
     background-image:url(imgs/hole.svg);
     background-repeat: no-repeat;
@@ -184,21 +183,6 @@ footer {
     -webkit-animation:count 0.1s cubic-bezier(0.1,0.1,1,1) 1;
     animation:count 0.1s cubic-bezier(0.1,0.1,1,1) 1;    
 }
-
-.go {
-    width:500px;
-}
-
-.randomImg {
-    width:200px;
-    height:200px;
-    position:absolute;
-    top:0;
-    right:0;
-    left:0;
-    bottom:78%;
-    margin:auto;
-} 
 
 /* Quiz */
 [id*="quiz"] {
