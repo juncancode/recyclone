@@ -11,6 +11,7 @@
         <link href="https://fonts.googleapis.com/css?family=Saira:400,700" rel="stylesheet">
 <!--   Dialog/Input Font-->
         <link href="https://fonts.googleapis.com/css?family=Aldrich" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     </head>
     <body>
@@ -24,11 +25,11 @@
                 </div>
                 <nav>
                     <a id="home" href="../home.html">Home</a>
+                    <a id="about" href="../about.html" >About Us</a>
                     <a id="tutrial" href="../tutorial.html">How to recycle</a>
-                    <a id="play" href="play.html">Play</a>
+                    <a id="play" href="../instruction.html">Play</a>
                 </nav>
             </header>
-            
 <!--   Sign Section -->
             <div class="signs flex">
                 <img src="imgs/papersign.svg" alt="papersign" class="paper">
@@ -57,7 +58,26 @@
             
             <div id="readyGo"></div>
         </div>
-        
+<!--    Question 1 -->
+        <div id="quiz_one">
+            <h1 id="h1">Which one of these items goes into landfill bin?</h1>
+                <i id="exit" class="fas fa-times-circle"></i>
+            <div class="list_one">
+                <img src="imgs/apple.svg" id="list1" class="wrong">
+            </div>
+            <div class="list_two"> 
+                  <img src="imgs/garbagebag.svg" id="list2" class="right">
+            </div>
+            <div class="list_three">
+                <img src="imgs/bag.svg" id="list3" class="wrong">
+            </div>
+            <div class="list_four">
+                <img src="imgs/tetrapak.svg" id="list4" class="wrong">
+            </div>
+            <div class="list_five">
+                <img src="imgs/jug.svg" id="list5" class="wrong">  
+            </div>
+        </div>
         <script src="play.js"></script>
     </body>
 </html>

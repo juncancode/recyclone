@@ -36,7 +36,7 @@ function countdown( parent, callback ){
   }
   
   // These are all the text we want to display
-  var images = ['imgs/3.svg', 'imgs/2.svg', 'imgs/1.svg','imgs/GO.svg'];
+  var images = ['imgs/3.svg', 'imgs/2.svg', 'imgs/1.svg'];
   // This will store the paragraph we are currently displaying
   var Img = null;
   
@@ -156,25 +156,62 @@ function showRandomItem(){
     showItem(item);
 }
 
-setInterval(start,5000);
 
-function start(){
+/*function start(){
 hole.addEventListener("click",function(){
    console.log("item");
    showRandomItem(); 
 });
-}
-//drag and drop
+}*/
 
-function allowDrop(ev){
-    ev.preventDefault();
+// Quiz Appear 
+var quiz_one = document.getElementById("quiz_one");
+
+setInterval(start,4000);
+
+function start(){
+    quiz_one.style.visibility = "visible";
 }
 
-function drag(ev){
-    ev.dataTransfer.setData("text",ev.target.id);
-}
+// Quiz Appear
+var exitBut = document.getElementById("exit");
+exitBut.addEventListener("click",function(){
+    quiz_one.style.display = "none";
+});
 
-function drop(ev) {
-    ev.preventDefault();
-    var data = ev.dataTransfer.getData("text");
+//var q1 = '<h1>Which one of these items goes into landfill bin?</h1><i id="exit" class="fas fa-times-circle"></i><img src="imgs/apple.svg" id="wrong"><img src="imgs/garbagebag.svg" id="right"><img src="imgs/bag.svg" id="wrong"><img src="imgs/tetrapak.svg" id="wrong"><img src="imgs/jug.svg" id="wrong">'
+
+//var quiz = [q1];
+
+//var position = 0;
+
+//$(document).ready(function(){
+//   $('#quiz_one').html(quiz[position]); 
+//});
+
+var questionArray= ["which one of these items goes into landfill bin?", 
+                    "Which one of these items goes into glass bin",
+                   "Which one of these items goes into compost bin",
+                   "Which one of these items goes into plastic bin",
+                   "Which one of these items goes into paper bin"];
+var answerArray = [];
+
+var list1 = document.getElementById("list1"),
+    list2 = document.getElementById("list2"),
+    list3 = document.getElementById("list3"),
+    list4 = document.getElementById("list4"),
+    list5 = document.getElementById('list5');
+
+list1.addEventListener("click", function() {
+    answerArray.push(this.src);
+    nextQ();
+});
+
+function nextQ () {
+    $("#h1").text(questionArray[1]);
+    list1.src = "imgs/leave.svg";
+    list2.src = "imgs/tetrapak.svg";
+    list3.src = "imgs/newspaper.svg";
+    list4.src = "imgs/glasscup.svg";
+    list5.src = "imgs/eggs.svg";
 }

@@ -58,7 +58,7 @@ nav {
 nav a {
     text-decoration: none;
     font-family: 'Saira', sans-serif;
-    font-size:2.5rem;
+    font-size:2.2rem;
     color:#3c423f;
     margin:50px;
 }
@@ -235,7 +235,7 @@ footer {
     border-radius:50px;
     font-family: 'Rajdhani', sans-serif;
     font-size:1.5rem;
-    font-weight:700;
+    font-weight:600;
 }
 
 [id*="back"]:hover {

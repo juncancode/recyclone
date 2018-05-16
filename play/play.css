@@ -18,7 +18,7 @@
     width:1400px;
     height:1055px;
     background-color: #3c423f;
-    z-index:-2;
+    z-index:-1;
 }
 
 /* Header */
@@ -62,7 +62,7 @@ nav {
 nav a {
     text-decoration: none;
     font-family: 'Saira', sans-serif;
-    font-size:2.5rem;
+    font-size:2.2rem;
     color:#3c423f;
     margin:50px;
 }
@@ -154,7 +154,6 @@ footer {
     left:0;
     margin:auto;
     cursor:pointer;
-    pointer-events:auto;
 }
 
 .timer {
@@ -162,11 +161,6 @@ footer {
     width:150px;
     top:17%;
     right:16%;
-}
-
-/* CountDown */
-.bin:hover {
-    filter:brightness(85%);
 }
 
 #readyGo {
@@ -205,3 +199,60 @@ footer {
     bottom:78%;
     margin:auto;
 } 
+
+/* Quiz */
+[id*="quiz"] {
+    background-color:rgba(0,0,0,0.8);
+    width:1000px;
+    height:550px;
+    position:relative;
+    top:300px;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:auto;
+    display:flex;
+    justify-content: center;
+    visibility: hidden;
+}
+
+#quiz_two {
+    visibility:visible;
+}
+
+#quiz_one h1 { 
+    position: absolute;
+    top:80px;
+    left:0;
+    right:0;
+    text-align: center;
+    color:#ffff;
+    font-family: 'Saira', sans-serif;
+    font-weight:300;
+}
+
+[class*="list"] img {
+    position:relative;
+    top:200px;
+    width:110px;
+    display:inline-block;
+    margin:30px;
+    cursor:pointer;
+    transition:0.2s;
+}
+
+[class*="list"] img:hover{
+    transform:scale(1.2);
+}
+
+/* exit icon */
+.fas {
+    position:absolute;
+    right:-10px;
+    top:-10px;
+    font-size:3em;
+    color:#fff;
+    cursor: pointer;
+}
+
+/* Quiz items */
