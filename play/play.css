@@ -277,5 +277,15 @@ footer {
     position:absolute;
     top:35%;
     left:250px;
-    display:block;
+    display:none;
+}
+
+#show_score {
+    position:absolute;
+    top:33%;
+    left:33%;
+    font-family: 'Saira', sans-serif;
+    color:#3c423f; 
+    font-size:2.5rem;
+    display:none;
 }

@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+    
     <head>
         <title>Recyclone - About Page</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="about.css" type="text/css">
+        <link rel="stylesheet" href="css/about.css" type="text/css">
 <!--  Button Font   -->
         <link href="https://fonts.googleapis.com/css?family=Rajdhani:400,700" rel="stylesheet">
 <!--   Heading/Footer Font   -->        
@@ -12,10 +13,12 @@
 <!--   Dialog/Input Font-->
         <link href="https://fonts.googleapis.com/css?family=Aldrich" rel="stylesheet">
     </head>
+    
     <body>   
         <div class="main_container">
             <!-- Background -->
-            <img src="imgs/background.svg" alt="background" class="background">   
+            <img src="imgs/background.svg" alt="background" class="background">  
+            
 <!--    Logo & Navigation  -->
             <header>
                 <div class="logo">
@@ -25,7 +28,7 @@
                     <a href="home.html" id="home">Home</a>
                     <a href="about.html" id="about">About Us</a>
                     <a href="tutorial.html" id="tutorial">How to Recycle</a>
-                    <a href="instruction.html" id="play">Play</a>
+                    <a href="play/play.html" id="play">Play</a>
                 </nav>
             </header>    
 
@@ -37,6 +40,7 @@
                 <img src="imgs/glasssign.svg" alt="glasssign" class="glass">
                 <img src="imgs/plasticsign.svg" alt="plasticsign" class="plastic">
             </div>
+            
 <!-- Recycling bin section -->
             <div class="bins flex">
                 <img src="imgs/paperbin.svg" alt="paperbin" id="paper">
@@ -45,11 +49,27 @@
                 <img src="imgs/glassbin.svg" alt="glassbin" id="glass">
                 <img src="imgs/plasticbin.svg" alt="plasticbin" id="plastic">
             </div>
+            
 <!-- Mascot Section -->
             
             <div class="about_text">
                 <h1>About Us</h1>
-                <p>Jun Jung &amp; Laura Wu</p>
+                <p id="expl_text">Recyclon is a web applicaton that helps kids and their parents learn how to dispose garbage and recycle it properly.</p>
+                
+                <h2>Our Team</h2>
+                <div class="user jun"></div>
+                <div class="user laura"></div>
+                  
+                <p class="name jun1">Jun Jung</p>
+                <p class="name laura1">Laura Wu</p>
+                
+                <h2 class="github">Github Link</h2> 
+                <p class="github_text">Welcome to check our Github link!</p>
+                <a class="github_link" href="https://github.com/monuda85/recyclone">Go to Github!</a>
+                
+                <a href="https://github.com/monuda85/recyclone"><button class="github_link">Go to Github</button></a>
+                
+                
             </div>
             
             <div class="mascot">

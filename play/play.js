@@ -209,6 +209,9 @@ var list1 = document.getElementById("list1"),
 var mascot = document.getElementById("resultMascot");
 var numClick = 0;
 var score = 0;
+var scores = document.getElementById("scores");
+var showScore = document.getElementById("show_score");
+var bubble = document.getElementById("bubble");
 
 list1.addEventListener("click", function() {
     numClick++;
@@ -348,7 +351,7 @@ function nextQ4 () {
 
 function result() {
     if (score <= 2) {
-        $("#h1").text(results[2] + score + " / 5");
+        $("#h1").text(results[2]);
         list1.style.display = "none";
         list2.style.display = "none";
         list3.style.display = "none";
@@ -356,8 +359,11 @@ function result() {
         list5.style.display = "none";
         mascot.src = "imgs/angry.svg";
         mascot.style.display = "block";
+        scores.innerHTML = score;
+        showScore.style.display = "block";
+        bubble.style.display = "block";
     } else if (score == 3) {
-        $("#h1").text(results[1] + score + " / 5");
+        $("#h1").text(results[1]);
         list1.style.display = "none";
         list2.style.display = "none";
         list3.style.display = "none";
@@ -365,8 +371,11 @@ function result() {
         list5.style.display = "none";
         mascot.src = "imgs/soso.svg";
         mascot.style.display = "block";
+        scores.innerHTML = score;
+        showScore.style.display = "block";
+         bubble.style.display = "block";
     } else if (score >= 4) {
-        $("#h1").text(results[0] + score + " / 5");
+        $("#h1").text(results[0]);
         list1.style.display = "none";
         list2.style.display = "none";
         list3.style.display = "none";
@@ -374,5 +383,8 @@ function result() {
         list5.style.display = "none";
         mascot.src = "imgs/awesome.svg";
         mascot.style.display = "block";
+        scores.innerHTML = score;
+        showScore.style.display = "block";
+        bubble.style.display = "block";
     }
 }
