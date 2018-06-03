@@ -358,8 +358,8 @@ template {
     bottom:0;
     left:0;
     margin:auto;
-    width:1400px;
-    height:1055px;
+    width:1024px;
+    height:768px;
     background-color: #3c423f;
 }
 /* Home link */
@@ -374,7 +374,7 @@ header {
     left:0;
     right:0;
     width:100%;
-    height:150px;
+    height:130px;
     background-color: #bbe4ac;
 }
 
@@ -387,10 +387,8 @@ header {
 }
 
 .logo img{
-    margin-top: 17px;
-    margin-bottom:11px;
-    margin-left:31px;
-    width:65%;
+    margin:10px 20px;
+    width:55%;
 }
 
 /* navigation bar */
@@ -403,9 +401,9 @@ nav {
 nav a {
     text-decoration: none;
     font-family: 'Saira', sans-serif;
-    font-size:2.2rem;
+    font-size:1.7rem;
     color:#3c423f;
-    margin:50px;
+    margin:20px;
 }
 
 nav a:hover {
@@ -419,32 +417,31 @@ nav a:hover {
     left:0;
     right:0;
     margin:auto;
-    width:90.9%;
+    width:90.4%;
     height:auto;
 }
 
 /* About Text Box white-242, 242, 242,0.98*/
-.about_text{
+.about_text {
     background-color:#0c6f40;
-    width:540px;
-    height:720px;
-    position:absolute;
-    left:200px;
-    top:240px;
+    width:400px;
+    height:500px;
+    position:relative;
+    left:130px;
+    top:50px;
     border-radius:25px;
     padding:5px;
     border:9px solid #3c423f;
 }
 
 /*Box Page Infor*/
-h1{
+h1  {
     font-family: 'Aldrich', sans-serif;
     color:#ffffff;
+    text-align: center;
+    font-size:1.5rem;
     position:absolute;
-    padding-left:190px;
-    padding-right:190px;
-    padding-top:20px;
-    padding-bottom: 20px;
+    left:150px;
 }
 
 h1:after{
@@ -454,104 +451,62 @@ h1:after{
     border-bottom-width:3px;
 }
 
-/*   
-- Color Palette - 
- #3c423f black 
- #0c6f40 dark green 
- #66c144 green 
- #bbe4ac lime 
- #ffffff white 
-*/
-
-/*Expl_text Content*/
 #expl_text{
-    color:white;
-    width:400px;
-    height:150px;
-    position:absolute;
-    left:80px;
-    top:100px;
-    font-family: 'Aldrich', sans-serif;
-    font-size:1.2em;
-    text-align:center;
-    font-weight: 0;
-    opacity:0.99;
-    line-height:1.5;
-}
-
-/*Team Instruction*/
-h2{
-    font-family: 'Aldrich', sans-serif;
     color:#ffffff;
     position:absolute;
-    padding-left:190px;
-    padding-right:190px;
-    padding-top:255px;
-    left:23px;
+    left:20px;
+    top:50px;
+    padding:10px;
+    font-family: 'Aldrich', sans-serif;
+    font-size:1.1em;
+    text-align:center;
+    line-height:1.7;
 }
 
-.user{
-    display: inline-block;
+/* Team Photos */
+
+.team {
+    font-family: 'Aldrich', sans-serif;
+    color:#ffffff;
+    text-align: center;
+    margin-top:200px;
+}
+
+.jun {
+    background-image: url('../jun.JPG');
+    margin-left:30px;
+    float:left;
+}
+
+.laura {
+    background-image: url('../laura.jpg');
+    margin-right:30px;
+    float:right;
+}
+
+.user {
+    display:inline-block;
     width: 120px;
     height: 120px;
-    border-radius: 50%;
+    border-radius:50%;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position:center;
     background-size: cover;
-    top:320px;
 }
 
-.jun{
-    background-image: url('../jun.JPG');
-    position:absolute;
-    left:120px;
-}
-
-.laura{
-    background-image: url('../laura.jpg');
-    position:absolute;
-    left:305px;
-}
-
-/*Name Showing*/
 .name{
     font-family: 'Aldrich', sans-serif;
-    display: inline-block;
-    position:absolute;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+    position: absolute;
+    top:370px;
+    left:0;
+    right:0;
     color:#ffffff;
-    top:440px;
-    font-size:1.2em;
-}
-
-.jun1{
-    left:133px;
-}
-
-.laura1{
-    right:140px;
 }
 
 /*Github Link*/
-.github{
-    font-family: 'Aldrich', sans-serif;
-    color:#ffffff;
-    position:absolute;
-    padding-left:190px;
-    padding-right:190px;
-    padding-top:530px;
-    left:23px;
-}
-
-.github_text{
-    font-family: 'Aldrich', sans-serif;
-    display: inline-block;
-    position:absolute;
-    color:#ffffff;
-    top:580px;
-    left:120px;
-    text-align:center;
-    font-size:1.2em;
-}
 
 .github_link{
     width:180px;
@@ -568,7 +523,7 @@ h2{
     border:3px solid #3c423f;
     border-radius:50px;
     font-size:1.4rem;
-    font-weight:505;
+    font-weight:600;
 }
 
 .github_link:hover {
@@ -599,9 +554,8 @@ h2{
 }
 
 .signs img{
-    width:160px;
-    height:100%;
-    display:none;
+    width:120px;
+    height:auto;
 }
 
 .signs .plastic {
@@ -619,18 +573,8 @@ h2{
 }
 
 .bins img {
-    width:200px;
+    width:145px;
     height:auto;
-}
-
-.speech::after {
-    content:"";
-    position:absolute;
-    top:100%;
-    right:8%;
-    border-width:30px;
-    border-style:solid;
-    border-color:#ffffff transparent transparent transparent;
 }
 
 #name {
@@ -648,23 +592,17 @@ h2{
     100%{transform: scaleY(1)}
 }
 
-.mascot {
-    position:relative;
-}
-
-.mascot img{
+.mascot img {
     position:absolute;
-    top:294px;
-    right:180px;;
-    margin:auto;
+    bottom:0px;
+    right:70px;
     width:33%;
 }
 
 .mascot #eyes {
     position:absolute;
-    top:520px;
-    right:-455px;
-    left:0;
+    top:495px;
+    right:257px;
     width:5.5%;
     z-index:99;
     -webkit-animation:eyes 0.5s cubic-bezier(0.2,0.3,0.5,0.9) 1.5s backwards, blink 1.5s cubic-bezier(0.2,0.3,0.5,0.9) 3s infinite backwards;

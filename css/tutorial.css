@@ -6,6 +6,7 @@
  #bbe4ac lime 
  #ffffff white 
 */
+
 /* Main Container */
 .main_container {
     position:absolute;
@@ -14,8 +15,8 @@
     bottom:0;
     left:0;
     margin:auto;
-    width:1400px;
-    height:1055px;
+    width:1024px;
+    height:768px;
     background-color: #3c423f;
 }
 
@@ -26,7 +27,7 @@ header {
     left:0;
     right:0;
     width:100%;
-    height:150px;
+    height:130px;
     background-color: #bbe4ac;
 }
 
@@ -39,10 +40,8 @@ header {
 }
 
 .logo img{
-    margin-top: 17px;
-    margin-bottom:11px;
-    margin-left:31px;
-    width:65%;
+    margin:10px 20px;
+    width:55%;
 }
 
 /* Home link */
@@ -53,16 +52,16 @@ header {
 /* navigation bar */
 nav {
     position:absolute;
-    top:32.9%;
+    top:33.3%;
     right:5%;
 }
 
 nav a {
     text-decoration: none;
     font-family: 'Saira', sans-serif;
-    font-size:2.2rem;
+    font-size:1.7rem;
     color:#3c423f;
-    margin:50px;
+    margin:20px;
 }
 
 nav a:hover {
@@ -84,9 +83,10 @@ nav a:hover {
 /* Title */
 .title {
     text-align: center;
-    margin-top:22px;
+    margin-top:20px;
+    padding:10px;
     font-family: 'Saira', sans-serif;
-    font-size:3rem;
+    font-size:2rem;
     color:#ffffff;
     text-transform: uppercase;
 }
@@ -97,12 +97,12 @@ nav a:hover {
 /* Icons */
 .icons {
     position:relative;
-    top:-1%;
+    top:-3%;
 }
 
 [class*="fa"] {
-    margin:27px;
-    font-size:2rem;
+    margin:20px;
+    font-size:1.5rem;
     color:#ffffff;
     cursor:pointer;
 }
@@ -151,33 +151,33 @@ nav a:hover {
 
 .bubble img {
     position: absolute;
-    top:-11px;
+    top:-27px;
     right:0;
-    left:2%;
+    left:-3%;
     margin:auto;
-    width:390px;
+    width:250px;
     height:auto;
     animation:bubble 1s ease-in-out 1s 0.7 backwards;
 }
 
 .bubble p {
     position: absolute;
-    top:55px;
-    left:40%;
+    top:10px;
+    left:38%;
     font-family: 'Aldrich', sans-serif;
-    font-size:1.4rem;
-    letter-spacing:-1px;
+    font-size:1rem;
+    letter-spacing: -1px;
     display:none;
 }
 
 .thinking {
     position:absolute;
-    top:50px;
-    right:43%;
+    top:10px;
+    right:44%;
 }
 
 .thinking .fa-circle {
-    font-size:1.5rem;
+    font-size:1rem;
     color:#bbe4ac; 
     cursor: none;
 }
@@ -211,11 +211,11 @@ nav a:hover {
 
 .mascot img{
     position:absolute;
-    top:180px;
+    top:50px;
     right:0;
     left:7%;
     margin:auto;
-    width:300px;
+    width:200px;
 }
 
 /* Blink Animation */
@@ -229,9 +229,9 @@ nav a:hover {
 
 .mascot #eyes {
     position:absolute;
-    top:335px;
-    left:1.4%;
-    width:50px;
+    top:153px;
+    left:16px;
+    width:37px;
     z-index:99;
     -webkit-animation: blink 1.5s cubic-bezier(0.2,0.3,0.5,0.9) 1s infinite backwards;
 }
@@ -246,12 +246,12 @@ nav a:hover {
 .dialogue {
     font-family: 'Aldrich', sans-serif;
     position:absolute;
-    bottom:5%;
+    bottom:7%;
     left:0;
     right:0;
     margin:auto;
-    width:600px;
-    height:120px;
+    width:500px;
+    height:100px;
     padding:0px 10px 30px 10px;
     background-color:#ffffff;
     border:7px solid #66c144;
@@ -261,7 +261,7 @@ nav a:hover {
 .dialogue p {
     line-height:1.5;
     text-align: center;
-    font-size:1.4rem;
+    font-size:1.3rem;
     font-weight:400;
     color:#3c423f;
 }
@@ -315,16 +315,16 @@ nav a:hover {
 
 /* Landfill */
 @-webkit-keyframes landfill {
-    0%{transform:translateY(50px)}
+    0%{transform:translateY(30px)}
     50%{transform:translateY(0px)}
-    100%{transform:translateY(50px)}
+    100%{transform:translateY(30px)}
 }
 
 #utensil {
     position:absolute;
     top:20%;
     left:10%;
-    width:220px;
+    width:150px;
     animation:landfill 2s ease-in-out infinite both;
 }
 
@@ -332,7 +332,7 @@ nav a:hover {
     position:absolute;
     top:53%;
     left:5%;
-    width:130px;
+    width:100px;
     animation:landfill 2.2s ease-in-out infinite both;
 }
 
@@ -340,24 +340,24 @@ nav a:hover {
     position:absolute;
     top:45%;
     left:23%;
-    width:150px;
+    width:100px;
     animation:landfill 2.4s ease-in-out infinite both;
 }
 
 
 #g_bag {
     position:absolute;
-    top:23%;
+    top:20%;
     right:10%;
-    width:180px;
+    width:130px;
     animation:landfill 2.6s ease-in-out infinite both;
 }
 
 #egg_container {
     position:absolute;
-    top:60%;
+    top:55%;
     right:10%;
-    width:310px;
+    width:200px;
     animation:landfill 2.8s ease-in-out infinite both;
 }
 
@@ -372,7 +372,7 @@ nav a:hover {
     position:absolute;
     top:20%;
     left:10%;
-    width:160px;
+    width:120px;
     animation:glass 2s ease-in-out infinite both;
 }
 
@@ -380,7 +380,7 @@ nav a:hover {
     position:absolute;
     top:40%;
     left:25%;
-    width:110px;
+    width:80px;
     animation:glass 2.2s ease-in-out infinite both;
 }
 
@@ -388,7 +388,7 @@ nav a:hover {
     position:absolute;
     top:50%;
     left:3%;
-    width:180px;
+    width:140px;
     animation:glass 2.4s ease-in-out infinite both;
 }
 
@@ -396,7 +396,7 @@ nav a:hover {
     position:absolute;
     top:20%;
     right:15%;
-    width:150px;
+    width:100px;
     animation:glass 2.6s ease-in-out infinite both;
 }
 
@@ -404,19 +404,19 @@ nav a:hover {
     position:absolute;
     top:50%;
     right:7%;
-    width:150px;
+    width:100px;
     animation:glass 2.8s ease-in-out infinite both;
 }
 
 /* Organic */
 @-webkit-keyframes organic {
-    0%{transform:translateY(55px)}
+    0%{transform:translateY(30px)}
     50%{transform:translateY(0px)}
-    100%{transform:translateY(55px)}
+    100%{transform:translateY(30px)}
 }
 
 #egg_shell {
-    width:190px;
+    width:150px;
     position:absolute;
     top:20%;
     left:10%;
@@ -424,7 +424,7 @@ nav a:hover {
 }
 
 #apple {
-    width:150px;
+    width:120px;
     position: absolute;
     top:55%;
     left:3%;
@@ -432,7 +432,7 @@ nav a:hover {
 }
 
 #banana {
-    width:220px;
+    width:150px;
     position: absolute;
     top:40%;
     left:20%;
@@ -440,7 +440,7 @@ nav a:hover {
 }
 
 #teabag {
-    width:170px;
+    width:130px;
     position: absolute;
     top:20%;
     right:10%;
@@ -448,7 +448,7 @@ nav a:hover {
 }
 
 #leaves {
-    width:250px;
+    width:170px;
     position: absolute;
     top:55%;
     right:5%;
@@ -457,13 +457,13 @@ nav a:hover {
 
 /* Plastic */
 @-webkit-keyframes plastic {
-    0%{transform:translateY(50px)}
+    0%{transform:translateY(30px)}
     50%{transform:translateY(0px)}
-    100%{transform:translateY(50px)}
+    100%{transform:translateY(30px)}
 }
 
 #jug {
-  width:190px;
+    width:130px;
     position: absolute;
     top:20%;
     right:5%;
@@ -471,7 +471,7 @@ nav a:hover {
 }
 
 #container {
-    width:200px;
+    width:150px;
     position: absolute;
     top:60%;
     left:5%;
@@ -479,7 +479,7 @@ nav a:hover {
 }
 
 #tetrapak {
-    width:180px;
+    width:130px;
     position: absolute;
     top:50%;
     right:10%;
@@ -487,18 +487,18 @@ nav a:hover {
 }
 
 #p_bottle {
-    width:200px;
+    width:150px;
     position:absolute;
-    top:17%;
+    top:20%;
     left:10%;
     animation:plastic 2.6s ease-in-out infinite both; 
 }
 
 #can {
-    width:170px;
+    width:100px;
     position: absolute;
     top:44%;
-    left:25%;
+    left:23%;
     animation:plastic 2.8s ease-in-out infinite both; 
 }
 
@@ -510,7 +510,7 @@ nav a:hover {
 }
 
 #newspaper {
-    width:200px;
+    width:150px;
     position: absolute;
     top:20%;
     left:5%;
@@ -518,7 +518,7 @@ nav a:hover {
 }
 
 #book {
-    width:200px;
+    width:150px;
     position:absolute;
     top:60%;
     left:3%;
@@ -526,7 +526,7 @@ nav a:hover {
 }
 
 #cereal {
-    width:180px;
+    width:130px;
     position:absolute;
     top:35%;
     left:20%;
@@ -534,7 +534,7 @@ nav a:hover {
 }
 
 #s_bag {
-    width:190px;
+    width:130px;
     position: absolute;
     top:20%;
     right:10%;
@@ -542,7 +542,7 @@ nav a:hover {
 }
 
 #box {
-    width:250px;
+    width:200px;
     position: absolute;
     top:55%;
     right:5%;

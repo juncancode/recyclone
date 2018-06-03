@@ -358,10 +358,11 @@ template {
     bottom:0;
     left:0;
     margin:auto;
-    width:1400px;
-    height:1055px;
+    width:1024px;
+    height:768px;
     background-color: #3c423f;
 }
+
 /* Home link */
 .logo:hover{
     filter:brightness(135%);
@@ -374,7 +375,7 @@ header {
     left:0;
     right:0;
     width:100%;
-    height:150px;
+    height:130px;
     background-color: #bbe4ac;
 }
 
@@ -387,10 +388,8 @@ header {
 }
 
 .logo img{
-    margin-top: 17px;
-    margin-bottom:11px;
-    margin-left:31px;
-    width:65%;
+    margin:10px 20px;
+    width:55%;
 }
 
 /* navigation bar */
@@ -403,9 +402,9 @@ nav {
 nav a {
     text-decoration: none;
     font-family: 'Saira', sans-serif;
-    font-size:2.2rem;
+    font-size:1.7rem;
     color:#3c423f;
-    margin:50px;
+    margin:20px;
 }
 
 nav a:hover {
@@ -419,7 +418,7 @@ nav a:hover {
     left:0;
     right:0;
     margin:auto;
-    width:90.9%;
+    width:90.4%;
     height:auto;
 }
 
@@ -445,8 +444,8 @@ nav a:hover {
 }
 
 .signs img{
-    width:160px;
-    height:100%;
+    width:120px;
+    height:auto;
 }
 
 .signs .plastic {
@@ -464,7 +463,7 @@ nav a:hover {
 }
 
 .bins img {
-    width:200px;
+    width:145px;
     height:auto;
 }
 
@@ -478,20 +477,19 @@ nav a:hover {
 
 .speech {
     position:relative;
-    top:9%;
-    left:25%;
+    top:3%;
+    left:23%;
     border:1px solid transparent;
     border-radius:10px;
-    padding:20px;
-    width:370px;
-    height:152px;
+    padding:10px 20px 30px 20px;
+    width:300px;
+    height:120px;
     background-color:#ffffff;
     font-family: 'Aldrich', sans-serif;
-    font-size:1.3rem;
-    letter-spacing:2px;
+    font-size:1rem;
+    letter-spacing:3px;
     line-height:1.5;
     animation:pop 0.5s linear 2.5s 1 both;
-    border:px solid #66c144;
 }
 
 .speech::after {
@@ -499,7 +497,7 @@ nav a:hover {
     position:absolute;
     top:100%;
     right:8%;
-    border-width:30px;
+    border-width:25px;
     border-style:solid;
     border-color:#ffffff transparent transparent transparent;
 }
@@ -507,22 +505,22 @@ nav a:hover {
 #name {
     color:#66c144;
     font-weight:bold;
-    font-size:1.5rem;
+    font-size:1.3rem;
 }
 
 /* Mascot */
 /* Mascot Animation */
 @-webkit-keyframes mascot {
     0%{top:-1300px}
-    50%{top:100px;transform:scaleY(1.1);transform-origin: bottom}
-    75%{top:90px;transform: scaleY(0.7);transform-origin: bottom}
-    100%{top:100px;transform: scaleY(1)}
+    50%{top:29px;transform:scaleY(1.1);transform-origin: bottom}
+    75%{top:30px;transform: scaleY(0.7);transform-origin: bottom}
+    100%{top:29px;transform: scaleY(1)}
 }
 
 @-webkit-keyframes eyes {
     0%{top:-1000px}
-    85%{top:330px;transform:scaleY(0.5)}
-    100%{top:330px}
+    85%{top:200px;transform:scaleY(0.5)}
+    100%{top:200px}
 }
 
 @-webkit-keyframes blink {
@@ -539,7 +537,7 @@ nav a:hover {
 
 .mascot img{
     position:absolute;
-    top:100px;
+    top:29px;
     right:0;
     left:200px;
     margin:auto;
@@ -549,9 +547,8 @@ nav a:hover {
 
 .mascot #eyes {
     position:absolute;
-    top:330px;
-    right:120px;
-    left:200px;
+    top:200px;
+    left:110px;
     width:5.5%;
     z-index:99;
     -webkit-animation:eyes 0.5s cubic-bezier(0.2,0.3,0.5,0.9) 1.5s backwards, blink 1.5s cubic-bezier(0.2,0.3,0.5,0.9) 3s infinite backwards;

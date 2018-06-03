@@ -15,8 +15,8 @@
     bottom:0;
     left:0;
     margin:auto;
-    width:1400px;
-    height:1055px;
+    width:1024px;
+    height:768px;
     background-color: #3c423f;
     z-index:-1;
 }
@@ -28,7 +28,7 @@ header {
     left:0;
     right:0;
     width:100%;
-    height:150px;
+    height:130px;
     background-color: #bbe4ac;
 }
 
@@ -41,10 +41,8 @@ header {
 }
 
 .logo img{
-    margin-top: 17px;
-    margin-bottom:11px;
-    margin-left:31px;
-    width:65%;
+    margin:10px 20px;
+    width:55%;
 }
 
 /* Home link */
@@ -62,9 +60,9 @@ nav {
 nav a {
     text-decoration: none;
     font-family: 'Saira', sans-serif;
-    font-size:2.2rem;
+    font-size:1.7rem;
     color:#3c423f;
-    margin:50px;
+    margin:20px;
 }
 
 nav a:hover {
@@ -92,8 +90,8 @@ nav a:hover {
 }
 
 .signs img{
-    width:160px;
-    height:100%;
+    width:120px;
+    height:auto;
 }
 
 .signs .plastic {
@@ -112,7 +110,7 @@ nav a:hover {
 }
 
 .bins img {
-    width:200px;
+    width:145px;
     height:auto;
 }
 
@@ -142,28 +140,10 @@ footer {
     z-index:3;
 }
 
-.hole {
-    background-image:url(imgs/hole.svg);
-    background-repeat: no-repeat;
-    width:300px;
-    position: absolute;
-    top:17%;
-    right:0;
-    bottom:0;
-    left:0;
-    margin:auto;
-    cursor:pointer;
-}
-
-.timer {
-    position: absolute;
-    width:150px;
-    top:17%;
-    right:16%;
-}
-
 #readyGo {
     position:relative;
+    z-index:4;
+    top:-100px;
 }
 
 @-webkit-keyframes count {
@@ -172,7 +152,7 @@ footer {
 }
 
 .nums {
-    width:10%;
+    width:30%;
     height:200px;
     position:absolute;
     top:700px;
@@ -187,10 +167,10 @@ footer {
 /* Quiz */
 [id*="quiz"] {
     background-color:rgba(0,0,0,0.8);
-    width:1000px;
-    height:550px;
+    width:900px;
+    height:500px;
     position:relative;
-    top:200px;
+    top:50px;
     left:0;
     right:0;
     bottom:0;
@@ -207,7 +187,7 @@ footer {
 
 #quiz_one h1 { 
     position: absolute;
-    top:80px;
+    top:30px;
     left:0;
     right:0;
     text-align: center;
@@ -253,7 +233,7 @@ footer {
 #resultMascot {
     position:absolute;
     top:0;
-    bottom:-40%;
+    bottom:-34%;
     right:27%;
     margin:auto;
     width:250px;
@@ -263,15 +243,15 @@ footer {
 #bubble {
     width:250px;
     position:absolute;
-    top:35%;
+    top:25%;
     left:250px;
     display:none;
 }
 
 #show_score {
     position:absolute;
-    top:33%;
-    left:33%;
+    top:23%;
+    left:37%;
     font-family: 'Saira', sans-serif;
     color:#3c423f; 
     font-size:2.5rem;
